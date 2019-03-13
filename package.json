@@ -1,19 +1,36 @@
 {
-  "name": "typescript-starter",
+  "name": "whats-this-project",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "build": "tsc",
-    "format": "npm run prettier -- --write",
-    "test": "jest",
-    "prettier": "prettier **/*.ts"
-  },
+  "author": "Who are you?",
+  "license": "MIT",
+  "description": "Fill me please!",
+  "keywords": [
+	  "add",
+	  "your",
+	  "keys"
+  ],
+
+
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Deathrage/typescript-starter.git"
   },
-  "author": "",
-  "license": "MIT",
+
+  "scripts": {
+    "build": "tsc",
+    "format": "npm run prettier -- --write",
+    "test": "jest",
+    "prettier": "prettier **/*.ts",
+	"prepare": "npm run build",
+	"prepublishOnly": "npm run test"
+  },
+
   "devDependencies": {
     "@types/jest": "^24.0.9",
     "@typescript-eslint/eslint-plugin": "^1.4.2",
